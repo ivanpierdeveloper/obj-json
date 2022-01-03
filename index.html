@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<html lang="it">
+
+<head>
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'none' ; script-src resource:; "> -->
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="IT">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dati utente">
+    <meta name="author" content="https://ivanpierdeveloper.it">
+    <meta name="keywords" content="app, create-file-csv">
+    <link rel="shortcut icon" href="img/favicon-radius-8px-50.png" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="docs/css/root.css">
+    <link rel="stylesheet" type="text/css" href="docs/css/my-alert.css">
+    <link rel="stylesheet" href="docs/css/style.css">
+    <link rel="stylesheet" href="docs/css/tooltip.css" type="text/css">
+    <title>Home | Title</title>
+    <style type="text/css">
+        table {
+            table-layout: fixed;
+            width: 100%;
+            word-wrap: break-word;
+            height: auto;
+            color: var(--yellow);
+        }
+        
+        table caption {
+            color: var(--white);
+            text-align: center;
+        }
+        
+        table th {
+            border: 1px solid var(--danger);
+        }
+        
+        table td {
+            border: 1px solid var(--orange);
+            text-align: center;
+            font-size: 8pt;
+        }
+        
+        .tooltip {
+            width: 25%;
+        }
+        
+        .tooltip button {
+            width: 100%;
+        }
+        
+        .tooltip span {
+            font-size: 8pt;
+            padding: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="full-screen"></div>
+    <!-- ./full-screen -->
+    <div class="my-alert"></div>
+    <!-- ./my-alert -->
+    <div class="loader"></div>
+    <!-- loader-->
+    <div class="loader-text"></div>
+    <!-- loader-text -->
+    <div class="container">
+        <h1 class="root-text-indianred root-text-align-center root-text-color-blue">OBJ JSON</h1>
+        <hr />
+        <div class="content root-text-align-center">
+            <!--<div class="tble-excel root-display-none"></div>-->
+            <span class="span-didascalia root-text-color-secondary">il risultato è visibile nella console del browser</span>
+            <br />
+            <div class="tooltip">
+                <span class="tooltiptext">invia dati</span>
+                <button class="btn btn-s btn-send-data" onclick="javascript:sendData();">invia dati</button>
+            </div>
+        </div>
+        <!-- ./content -->
+    </div>
+    <!-- ./container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <!-- ./lib google ajax -->
+    <script lang="javascript" src="docs/js/my-alert.js" defer></script>
+    <!-- my-alert js -->
+    <!-- (defer) non accesso dall'esterno -->
+    <script lang="javascript" src="docs/js/script.js" defer></script>
+    <!-- script js -->
+    <script lang="javascript">
+    </script>
+</body>
+
+</html>
