@@ -8,4 +8,5 @@ Lavorare su dati obj e json
 
 NOTA:
 <p>Si consiglia di scarica l'app per il suo corretto funzionamento</p>
+
 # FINE
