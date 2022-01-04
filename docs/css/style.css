@@ -234,7 +234,7 @@ form span {
 .container {
     border: 1px solid var(--orange);
     /*width: 50vw;*/
-    width: 50%;
+    width: 80%;
     height: auto;
     margin-left: auto;
     margin-top: 50px;
