@@ -258,7 +258,16 @@ async function createDIV(data) {
         btr.appendChild(tdAVATAR);
         tbody.appendChild(btr);
     }); // ./forEach
+    const ftr = document.createElement('tr');
+    const ftd = document.createElement('td');
+    ftd.colSpan = "7";
+    ftd.innerText = `avatar inviati ${data.length - 1} avatar ricevuti ${data.length}`;
+    ftr.appendChild(ftd);
+    tfoot.appendChild(ftr);
     table.appendChild(tbody);
+    table.appendChild(tfoot);
+    table.cellSpacing = "10";
+    table.cellPadding = "18";
     div.appendChild(table);
     container.appendChild(div);
 }
