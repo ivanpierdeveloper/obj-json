@@ -28,11 +28,20 @@
     }
     */
     try {
-        if($_SERVER['REQUEST_METHOD'] === "PUT") {
+        if($_SERVER['REQUEST_METHOD'] === "POST") {
             $input_data = json_decode(file_get_contents('php://input'), true);
             //$output_data = ['encoded' => md5($input_data['string'])]; // non serve
             $output_data = $input_data['receive']; //filter_var_array($input_data['receive'], FILTER_SANITIZE_STRING); // nota: funziona con entrambi i modi
             // tutto
+            array_push($output_data, [
+                    id => 7,
+                    email => "passedphp@developer.com",
+                    usr => "php",
+                    psw => "php12345",
+                    age => 50,
+                    method => "POST",
+                    avatar => "img/avatar/default.png"
+                ]);
             $json_all = json_encode($output_data);
             // singoli
             $json_only_one = json_encode($output_data[0]['id']);
@@ -40,7 +49,7 @@
             echo $json_all;
         } // ./PUT
         else {
-            throw new Exception("Non è una chiamata PUT", 5477);
+            throw new Exception("Non è una chiamata POST", 5477);
         }
     } catch (Exception $error) {
         // senza indici
